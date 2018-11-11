@@ -1,0 +1,23 @@
+<div class="col-sm-11 col-xs-12 blog-container">
+ 
+    <% @posts.each do |post| %>
+    <div class="container-fluid">
+     
+        <h2 class="text-center"><%= post.title %></h2>
+        <h6 class="text-center"><%= post.created_at.strftime('%b %d, %Y') %></h6>
+
+      <div class="text-center" id="article-index">
+        <%= truncate(raw(post.body), :length => 230, :omission => "" , :escape => false) %>
+      </div>
+      <div class="text-center">
+        <%= link_to "READ MORE", post_path(post) %>
+      </div>
+      <% if admin_signed_in? %>
+        <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
+        <%= link_to "Delete", post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+      <% end %>
+      <hr />
+    </div>
+    <% end %>
+
+</div>

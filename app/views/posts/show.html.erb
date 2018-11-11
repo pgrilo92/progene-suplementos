@@ -1,0 +1,15 @@
+
+<div class="col-sm-11 col-xs-12 blog-content">
+  <h2 class="text-center"><%= @post.title %></h2>
+  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+  <div><%= raw @post.body %></div>
+  <div class="article-actions">
+      <%= link_to "Blog", posts_path, class: "btn btn-success" %>
+ <% if admin_signed_in? %>
+        <%= link_to "Edit", edit_post_path, class: "btn btn-default" %>
+        <%= link_to "Delete", post_path, class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+      <% end %>
+   
+    
+</div>
+</div>

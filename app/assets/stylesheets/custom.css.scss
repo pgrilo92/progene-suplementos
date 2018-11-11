@@ -1,0 +1,129 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+//application
+.notice{
+    position: absolute;
+}
+.alert{
+     position: absolute;
+}
+body{
+    width: 100%;
+    //overflow: hidden;
+}
+//HomePage
+.jumbotron1{
+    height: 35em;
+    background-image: asset-url('image1.jpg') ;
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+    
+    color: #fff;
+    background-color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    padding-top: 160px;
+     line-height: 1.04167;
+    font-weight: 600;
+    letter-spacing: .006em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+//Products
+#control-vol-space{
+     background-color: #f4f4f4;
+     
+}
+#text-pic{
+  
+      
+      
+       font-weight: bold;
+   
+}
+
+#change-img{
+    content: asset-url('prozis_fcporto_parceria_n.jpg') ;
+     max-width: 450px; 
+     height: 400px;
+     width: 100%;
+  
+
+}
+
+#change-img:hover {
+    content: asset-url('benfica-body.png') ;
+     max-width: 450px; 
+     height: 400px;
+     width: 100%;
+      
+}
+
+.btn-lg {
+    background-color: #000;
+    font-size: 1.7em;
+}
+#smaller-buttons {
+    padding: 0 30px;
+    border:  0px;
+    color: #0070c9;
+    font-size: 16px;
+
+}
+#smaller-buttons  p{
+ padding: 10px 20px;
+}
+#smaller-buttons a:hover{
+    text-decoration: underline;
+    background-color: rgba(0,0,0,0);
+    
+}
+.hero-cta .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 100;
+    line-height: 1;
+    font-size: 10px;
+}
+#control-vol-space{
+    padding: 20px;
+        background-color: #fff;
+}
+
+.squared-images img {
+  
+     width: 200px;
+   height: 160px;
+   box-sizing: border-box;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    margin: auto;
+}
+#smaller-buttons{
+    color: #000;
+}
+
+//Blog
+.blog-container{
+    width: 100%;
+    overflow: hidden;
+}
+#article-index{
+    width: 100%;
+    overflow: hidden;
+}
+
+//About
+#youvideo{
+    width: 100%;
+    padding-left: 25px;
+}
