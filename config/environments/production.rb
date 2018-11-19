@@ -28,7 +28,7 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
    config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'peaceful-garden-91388.herokuapp.com', :protocol => 'https' }
+  config.action_mailer.default_url_options = { :host => 'afternoon-ridge-66523.herokuapp.com', :protocol => 'https' }
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
 
