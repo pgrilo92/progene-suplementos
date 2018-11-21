@@ -28,10 +28,12 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
    config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'afternoon-ridge-66523.herokuapp.com/', :protocol => 'https' }
+
+  config.action_mailer.default_url_options = { :host => 'afternoon-ridge-66523.herokuapp.com', :protocol => 'https' }
+
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
