@@ -243,7 +243,7 @@ Devise.setup do |config|
   # Lists the formats that should be treated as navigational. Formats like
   # :html, should redirect to the sign in page when the user does not have
   # access, but formats like :xml or :json, should return 401.
-  #
+  config.secret_key = 'e37af36c7c31b6aef55e8cb5c06e58fe86de90ee7039d398751ec88a9ac748f5251fca0e79767c35f2d713da2e4b677c6d5ef9593b2ee8a6f6cf6e10acb45885'
   # If you have any extra navigational formats, like :iphone or :mobile, you
   # should add them to the navigational formats lists.
   #
